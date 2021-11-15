@@ -66,8 +66,8 @@ class BrowserFragment : Fragment() {
     private fun requestAPI() {
         apiInterface?.getShowData(etSearch.text.toString())?.enqueue(object : Callback<TvShows?> {
             override fun onResponse(call: Call<TvShows?>, response: Response<TvShows?>) {
-                for(photo in response.body()!!) {
-                    info.add(photo!!)
+                for(show in response.body()!!) {
+                    info.add(show!!)
                 }
                 rvMain.adapter?.notifyDataSetChanged()
             }

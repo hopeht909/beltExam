@@ -69,10 +69,8 @@ class RVAdapter(
                         entry.show.image!!.original
                     )
                 }
-
-
-                Toast.makeText(activity.activity, "Show added", Toast.LENGTH_LONG).show()
             }
+            Toast.makeText(activity.activity, "Show added", Toast.LENGTH_LONG).show()
         }
     }
 
